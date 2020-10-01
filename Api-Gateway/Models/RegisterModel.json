@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Register User",
+    "type": "object",
+    "properties": {
+        "user_email": {
+            "type": "string"
+        },
+        "first_name": {
+            "type": "string"
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "user_password": {
+            "type": "string"
+        },
+        "user_phone_number": {
+            "type": "number"
+        },
+        "user_address": {
+            "type": "object"
+        },
+        "user_dob": {
+            "type": "string"
+        },
+        "company_name": {
+            "type": "string"
+        },
+        "company_turnover": {
+            "type": "number"
+        },
+        "subscription_plan": {
+            "type": "string",
+            "enum": [
+                "free",
+                "basic",
+                "pro"
+            ]
+        }
+    },
+    "required": [
+        "user_email",
+        "first_name",
+        "last_name",
+        "user_password"
+    ]
+}

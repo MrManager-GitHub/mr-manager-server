@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Create Project",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "project_name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "project_valuation": {
+      "type": "number"
+    },
+    "area": {
+      "type": "number"
+    },
+    "house": {
+      "type": "boolean"
+    },
+    "plot": {
+      "type": "boolean"
+    },
+    "shop": {
+      "type": "boolean"
+    },
+    "flat": {
+      "type": "boolean"
+    },
+    "workers": {
+      "type": "number"
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "end_date": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "token",
+    "user_id",
+    "project_name",
+    "address",
+    "city",
+    "project_valuation",
+    "area",
+    "start_date",
+    "end_date"
+  ]
+}

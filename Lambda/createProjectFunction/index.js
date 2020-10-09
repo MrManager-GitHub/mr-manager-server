@@ -1,6 +1,6 @@
 /*
   This function uses
-  - authLayer to generate token after user authentication.
+  - authLayer to verify token and get user_id from decoded token.
   - nodeModulesLayer to get all the necessary packages
 */
 

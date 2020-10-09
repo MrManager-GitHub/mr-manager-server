@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "Create Supplier",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string"
+    },
+    "supplier_name": {
+      "type": "string"
+    },
+    "supplier_email": {
+      "type": "string"
+    },
+    "product": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "token",
+    "supplier_name",
+    "supplier_email",
+    "phone_number",
+    "product"
+  ]
+}

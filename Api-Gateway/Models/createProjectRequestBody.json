@@ -6,9 +6,6 @@
     "token": {
       "type": "string"
     },
-    "user_id": {
-      "type": "string"
-    },
     "project_name": {
       "type": "string"
     },

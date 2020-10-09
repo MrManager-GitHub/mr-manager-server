@@ -16,23 +16,23 @@ exports.handler = (event, context, callback) => {
   } else {
     try {
 
-      const getProjectParams = {
-        TableName: 'projects',
+      const getSuppliersParams = {
+        TableName: 'suppliers',
         KeyConditionExpression: "user_id = :uid",
         ExpressionAttributeValues: {
           ":uid": decodedToken.user_id
         }
       };
-      docClient.query(getProjectParams, (err, data) => {
+      docClient.query(getSuppliersParams, (err, data) => {
         if (err) {
-          callback('Couldn\'t fetch projects', null);
+          callback('Couldn\'t fetch suppliers', null);
         } else {
           callback(null, data);
         }
       });
 
     } catch (err) {
-      callback('Projects not fetched', null);
+      callback('Suppliers not fetched', null);
     }
 
   }
